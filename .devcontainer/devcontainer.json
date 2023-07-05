@@ -17,6 +17,7 @@
         "ms-toolsai.jupyter-renderers",
         "bierner.markdown-preview-github-styles",
         "gydunhn.vsc-essentials-core"
+        "yandeu.five-server"
 
       ],
       "settings": {
