@@ -30,8 +30,12 @@ nav {
     background-color: white;
 }
 
-@media (min-width: 992px) and (max-width:1400px) {
+@media (min-width: 992px) {
     #callout-heading {
-        margin-left: -1.5rem;
+        margin-left: -0.5rem;
+    }
+
+    #discount-banner {
+        margin-bottom: -1.25rem;
     }
 }
