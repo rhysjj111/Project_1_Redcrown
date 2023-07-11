@@ -29,7 +29,7 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item me-3">
                         <a class="nav-link active text-white" aria-current="page" href="index.html">Shop</a>
                     </li>
@@ -39,11 +39,20 @@
                     <li class="nav-item me-3">
                         <a class="nav-link text-white" href="commission_work.html">Commission Paints Gallery</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item me-3 d-lg-none">
                         <a class="nav-link text-white" href="commission_work.html">Contact us</a>
                     </li>
                 </ul>
+                <div class="ms-lg-auto me-lg-5">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="btn btn-light" data-bs-toggle="modal" data-bs-target="#contact-modal" >Contact us <i class="fa-solid fa-comment"></i></a>
+                        </li> 
+                          
+                    </ul>
+                </div>
             </div>
+            
         </div>
     </nav>
     <!-- /Navbar -->
@@ -134,20 +143,29 @@
     <!--/Shop-->
 
     <!-- Modal-->
-    <div class="modal" tabindex="-1">
+    <div class="modal" id="contact-modal" role="dialog" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h1 class="modal-title display-3">Contact us</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                    <form id="contact-form" role="form">           
+                        <div class="controls">
+                            <label for="form_name">Name*</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                        </div>
+                        <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                        </div>      
+                        <div class="form-group">
+                            <label for="form_message">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-success btn-send  pt-2 btn-block" value="Send Message" >
+                    </form>
             </div>
         </div>
     </div>
