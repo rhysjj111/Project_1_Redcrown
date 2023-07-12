@@ -1,4 +1,51 @@
-.fa-comment{
+body {
+    
+    /* font-family: 'Lora', serif; */
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+
+.discount-banner{}
+
+.callout-container{
+    height:100vh;
+
+    background: url(../images/cover4-edited.jpg) no-repeat right center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    background-color: #0D0D0D;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    position: relative;
+}
+
+.callout-header{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.opaque-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+}
+.shop-container{}
+
+.modal{
+    font-family: 'Lato', sans-serif;
+}
+
+#contact-button{
     color: #585657;
 }
 

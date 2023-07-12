@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/83054cc0b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora:ital@0;1&family=Noto+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -40,13 +43,13 @@
                         <a class="nav-link text-white" href="commission_work.html">Commission Paints Gallery</a>
                     </li>
                     <li class="nav-item me-3 d-lg-none">
-                        <a class="nav-link text-white" href="commission_work.html">Contact us</a>
+                        <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#contact-modal">Contact us</a>
                     </li>
                 </ul>
                 <div class="ms-lg-auto me-lg-5">
                     <ul class="navbar-nav">
                         <li class="nav-item d-none d-lg-block">
-                            <a class="btn btn-light" data-bs-toggle="modal" data-bs-target="#contact-modal" >Contact us <i class="fa-solid fa-comment"></i></a>
+                            <a class="btn btn-light" data-bs-toggle="modal" data-bs-target="#contact-modal" id="contact-button" >Contact us <i class="fa-solid fa-comment"></i></a>
                         </li> 
                           
                     </ul>
@@ -57,114 +60,123 @@
     </nav>
     <!-- /Navbar -->
 
-    <!-- Discount-banner -->
-    <div class="container-fluid mt-sm-3 d-none d-sm-block" id="discount-banner">
-        <div class="row">
-            <div class="col-12 text-center">
-                <div class="alert alert-warning mb-0"><strong>Sale Now On!</strong>
-                    Enter code: '<strong>DISCOUNT-15</strong>' at checkout.</div>
+    <div class="discount-banner">
+        <!-- Discount-banner -->
+        <!-- <div class="container-fluid mt-sm-3 d-none d-sm-block" id="discount-banner">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="alert alert-warning mb-0"><strong>Sale Now On!</strong>
+                        Enter code: '<span class="text-danger"><strong>DISCOUNT15</strong></span>' at checkout.</div>
+                </div>
             </div>
-        </div>
+        </div> -->
+        <!-- /Discount-banner -->
     </div>
-    <!-- /Discount-banner -->
-
-    <!--Callout-->
-    <div class="m-3 p-sm-1 p-md-4 m-md-3 m-lg-5 bg-body-secondary bg-gradient rounded-4">
-        <div class="container p-3 p-sm-4">
-            <section class="callout text-center text-xl-start">
-                <div id="callout-heading" class="row">
-                    <h1>'Real' figures, to scale, made with high quality resin.</h1>
-                </div>
-                <div class="row text-center justify-content-center mt-3 mt-xl-3 mb-xl-2">
-                    <div class="col-12 col-sm-10 col-lg-9 col-xl-7 col-xxl-6 my-1 text-end">
-                        <a class="btn btn-outline-primary btn-lg d-block" href="about.html">Find
-                            out more about us.</a>
+    
+    <div class="callout-container container-fluid">
+        <!--Callout-->
+        <div class="opaque-overlay"></div>
+        <div class="m-3 p-sm-1 p-md-4 m-md-3 m-lg-5">
+            <div class="container p-3 p-sm-4">
+                <section class="callout text-center text-xl-start">
+                    <div id="callout-heading" class="row">
+                        <h1 class="callout-header">'Real' figures, to scale, made with high quality resin.</h1>
                     </div>
-                </div>
-                <div class="row text-center justify-content-center mb-xl-2">
-                    <div class="col-12 col-sm-10 col-lg-9 col-xl-7 col-xxl-6 my-1 text-center">
-                        <a class="btn btn-outline-primary btn-lg d-block" href="commission_work.html">See
-                            our commission paints.</a>
+                    <div class="row text-center justify-content-center mt-3 mt-xl-3 mb-xl-2">
+                        <div class="col-12 col-sm-10 col-lg-9 col-xl-7 col-xxl-6 my-1 text-end">
+                            <a class="btn btn-outline-primary btn-lg d-block" href="about.html">Find
+                                out more about us.</a>
+                        </div>
                     </div>
-                </div>
-                <div class="row text-center justify-content-center">
-                    <div class="col-12 col-sm-10 col-lg-9 col-xl-7 col-xxl-6 my-1 text-start">
-                        <a class="btn btn-outline-primary btn-lg d-block" href="#shop">Scroll down to
-                            shop</a>
+                    <div class="row text-center justify-content-center mb-xl-2">
+                        <div class="col-12 col-sm-10 col-lg-9 col-xl-7 col-xxl-6 my-1 text-center">
+                            <a class="btn btn-outline-primary btn-lg d-block" href="commission_work.html">See
+                                our commission paints.</a>
+                        </div>
                     </div>
-                </div>
-            </section>
+                    <div class="row text-center justify-content-center">
+                        <div class="col-12 col-sm-10 col-lg-9 col-xl-7 col-xxl-6 my-1 text-start">
+                            <a class="btn btn-outline-primary btn-lg d-block" href="#shop">Scroll down to
+                                shop</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
+        <!--/Callout-->
     </div>
-    <!--/Callout-->
 
-    <!--Shop-->
-    <section class="shop container">
-        <div class="row">
-            <div>
-                <h1 id="shop">Shop</h1>
+    <div class="shop-container">
+        <!--Shop-->
+        <section class="shop container">
+            <div class="row">
+                <div>
+                    <h1 id="shop">Shop</h1>
+                </div>
             </div>
-        </div>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 text-center justify-content-center ">
-            <div>
-                <a href="product page">
-                    <img src="assets/images/stock.jpg" alt="Stock">
-                    <div>Title - stock photo description</div>
-                    <div>Subtitle - size</div>
-                    <div>Price</div>
-                </a>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 text-center justify-content-center ">
+                <div>
+                    <a href="product page">
+                        <img src="assets/images/stock.jpg" alt="Stock">
+                        <div>Title - stock photo description</div>
+                        <div>Subtitle - size</div>
+                        <div>Price</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="product page">
+                        <img src="assets/images/stock.jpg" alt="Stock">
+                        <div>Title - stock photo description</div>
+                        <div>Subtitle - size</div>
+                        <div>Price</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="product page">
+                        <img src="assets/images/stock.jpg" alt="Stock">
+                        <div>Title - stock photo description</div>
+                        <div>Subtitle - size</div>
+                        <div>Price</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="product page">
+                        <img src="assets/images/stock.jpg" alt="Stock">
+                        <div>Title - stock photo description</div>
+                        <div>Subtitle - size</div>
+                        <div>Price</div>
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="product page">
-                    <img src="assets/images/stock.jpg" alt="Stock">
-                    <div>Title - stock photo description</div>
-                    <div>Subtitle - size</div>
-                    <div>Price</div>
-                </a>
-            </div>
-            <div>
-                <a href="product page">
-                    <img src="assets/images/stock.jpg" alt="Stock">
-                    <div>Title - stock photo description</div>
-                    <div>Subtitle - size</div>
-                    <div>Price</div>
-                </a>
-            </div>
-            <div>
-                <a href="product page">
-                    <img src="assets/images/stock.jpg" alt="Stock">
-                    <div>Title - stock photo description</div>
-                    <div>Subtitle - size</div>
-                    <div>Price</div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!--/Shop-->
+        </section>
+        <!--/Shop-->
+    </div>
 
     <!-- Modal-->
     <div class="modal" id="contact-modal" role="dialog" tabindex="-1">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title display-3">Contact us</h1>
+                    <h1 class="modal-title display-4">Contact us</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="contact-form" role="form">           
-                        <div class="controls">
-                            <label for="form_name">Name*</label>
-                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                        <div class="form-group mb-3">
+                            <label for="form_name" class="form-label" >Name*</label>
+                            <input id="form_name" type="text" name="name" class="form-control form-control-lg" placeholder="Please enter your name" required="required" data-error="Firstname is required.">
                         </div>
-                        <div class="form-group">
-                            <label for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                        <div class="form-group mb-3">
+                            <label for="form_email" class="form-label">Email*</label>
+                            <input id="form_email" type="email" name="email" class="form-control form-control-lg" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
                         </div>      
-                        <div class="form-group">
-                            <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                        <div class="form-group mb-3">
+                            <label for="form_message" class="form-label">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control form-control-lg" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
                         </div>
-                        <input type="submit" class="btn btn-success btn-send  pt-2 btn-block" value="Send Message" >
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-lg btn-success btn-send  pt-2 btn-block" value="Send Message" >
+                        </div>                      
                     </form>
             </div>
         </div>
