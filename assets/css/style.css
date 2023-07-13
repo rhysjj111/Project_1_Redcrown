@@ -1,22 +1,46 @@
 body {
-    
-    /* font-family: 'Lora', serif; */
     font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Lora', serif; */
+    
     
 }
 
-.discount-banner{}
+.navalert-container{
+
+}
+
+.discount-banner{
+    border: 0;
+    background-color: #f3c643c7;
+    border-radius: 0;
+    padding: 7px;
+
+}
+
+nav {
+    background-color: #585657;
+}
+
+.navbar-brand{
+    margin: 0;
+}
+
+.navbar-toggler {
+
+    border-color: transparent;
+}
+
+
 
 .callout-container{
-    height:100vh;
+    height: 90vh;
 
     background: url(../images/cover4-edited.jpg) no-repeat right center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: contain;
+    background-size: cover;
     background-color: #0D0D0D;
-    
 
     display: flex;
     align-items: center;
@@ -25,11 +49,16 @@ body {
     position: relative;
 }
 
+@media (max-width: 768px) {
+   .callout-container{
+    height: 80vh;
+   }
+}
+
 .callout-header{
     color: white;
     background-color: black;
     font-weight: bold;
-    margin-bottom: 3rem;
 }
 
 .opaque-overlay{
@@ -37,9 +66,13 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    background-color: black;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
 }
-.shop-container{}
+.shop-container{
+
+}
 
 .modal{
     font-family: 'Lato', sans-serif;
@@ -49,44 +82,20 @@ body {
     color: #585657;
 }
 
-.callout .btn-outline-primary:hover {
+.callout .btn:hover {
     font-weight: 500;
     border-style: solid;
-    border-width: 0.25px;
+    border-width: 3px;
     color: seagreen;
-    background-color: transparent;
-    /* border-color: seagreen; */
+    background-color: white;
     border-color: seagreen;
-
 }
 
-.callout .btn-outline-primary {
-    border-color: rgba(255, 246, 230, 0.791);
-    /* color: #B33029; */
+.callout .btn{
     background-color: seagreen;
     color: white;
-
+    border-style: solid;
+    border-width: 3px;
 }
 
-/* .callout{
-    background-color: #585858;
-} */
 
-nav {
-    /* background-image: linear-gradient(#585657, white); */
-    background-color: #585657;
-}
-
-.navbar-toggler {
-    background-color: white;
-}
-
-@media (min-width: 992px) {
-    #callout-heading {
-        margin-left: -0.5rem;
-    }
-
-    #discount-banner {
-        margin-bottom: -1.25rem;
-    }
-}
