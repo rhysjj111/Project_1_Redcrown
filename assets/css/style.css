@@ -5,32 +5,11 @@ body {
     
 }
 
-.navalert-container{
+/* containers */
 
+.content-container{
+    padding: 120px 0px;
 }
-
-.discount-banner{
-    border: 0;
-    background-color: #f3c643c7;
-    border-radius: 0;
-    padding: 7px;
-
-}
-
-nav {
-    background-color: #585657;
-}
-
-.navbar-brand{
-    margin: 0;
-}
-
-.navbar-toggler {
-
-    border-color: transparent;
-}
-
-
 
 .callout-container{
     height: 90vh;
@@ -55,12 +34,6 @@ nav {
    }
 }
 
-.callout-header{
-    color: white;
-    background-color: black;
-    font-weight: bold;
-}
-
 .opaque-overlay{
     position: absolute;
     top: 0;
@@ -70,17 +43,98 @@ nav {
     background-color: rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
+
 .shop-container{
 
 }
 
-.modal{
-    font-family: 'Lato', sans-serif;
+
+/* navigation bar */
+
+.navalert-container{
+
+}
+
+.discount-banner{
+    border: 0;
+    background-color: #f3c643c7;
+    border-radius: 0;
+    padding: 7px;
+
+}
+
+.navbar {
+    background-color: #585657;
+    border-bottom: solid;
+    border-bottom-color: whitesmoke;
+    border-bottom-width: 1.5px;
+    border-top: solid;
+    border-top-color: whitesmoke;
+    border-top-width: 1.75px;
+} 
+
+.navbar-brand{
+    margin: 0;
+}
+
+.nav-item a{
+    letter-spacing: 0.75px;
+    color: white;
+}
+    
+.nav-item a:hover{
+    color: seagreen;
+}
+
+.navbar-nav .nav-item .active{
+    background-color: none;
+    text-decoration: underline;
 }
 
 #contact-button{
     color: #585657;
 }
+
+/* navbar toggler */
+body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
+    border: none;
+    color: transparent;
+}
+
+.nav-item #contact-button:hover{
+    background-color: seagreen;
+    color: white;
+    border-color: seagreen;
+}
+
+
+/* modal */
+
+.modal{
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* headers */
+
+.callout-header{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.page-header h2{
+    /* text-transform: uppercase; */
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 40px;
+
+}
+
+
+/* buttons */
+
+
 
 .callout .btn:hover {
     font-weight: 500;
@@ -97,5 +151,3 @@ nav {
     border-style: solid;
     border-width: 3px;
 }
-
-
