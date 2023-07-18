@@ -18,18 +18,20 @@
 <body>
 
     <div class="container-fluid navalert-container p-0 m-0">
-        <div class="discount-banner-container d-none d-sm-block">
-            <!-- Discount-banner -->
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="discount-banner alert alert-warning m-0"><strong>Sale Now On!</strong>
-                        Enter code: '<span class="text-danger"><strong>DISCOUNT15</strong></span>' at checkout.</div>
+        <!-- Discount-banner -->
+        <div class="discount-banner-container container-fluid">
+            <div class="row d-none d-sm-block">
+                <div class="col-12 p-0">
+                    <div class="discount-banner alert alert-warning m-0 text-center my-auto"><strong>Sale Now On!</strong>
+                        Enter code: '<span class="text-danger"><strong>DISCOUNT15</strong></span>' at checkout.
+                    </div>
                 </div>
             </div>
-            <!-- /Discount-banner -->                
         </div>
+        <!-- /Discount-banner -->
+
         <!-- Navbar-->
-        <nav class="navbar navbar-dark navbar-expand-lg">
+        <nav class="navbar navbar-dark navbar-expand-lg container-fluid">
             <div class="container-fluid">
 
                 <a class="navbar-brand ms-1 ms-lg-4" href="#"><img src="assets/images/redcrownlogo-navbar-resized.jpg" alt="Redcrown logo" class="img-fluid"></a>
@@ -71,7 +73,6 @@
 
 
     <!--Callout-->
-
     <div class="callout-container container-fluid shadow-lg">
         <div class="opaque-overlay"></div>
             <div class="m-3 p-sm-0 m-md-5">
@@ -109,53 +110,79 @@
     <!--/Callout-->
     
 
-     <!--Shop-->
-        <div class="container-wrapper">
-            <div class="container content-container">            
-                <section class="shop">
-                    <div class="row">
-                        <div class="page-header">
-                            <h2>Shop</h2>
-                        </div>
+    <!--Shop-->
+    <div class="container-wrapper container-fluid">
+        <div class="container content-container">            
+            <section>
+                <div class="row">
+                    <div class="page-header justify-content-center container">
+                        <h2>Shop</h2>
+                        <hr class="block-divider justify-content-center text-center">
                     </div>
-                    <div class="shop-container row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 text-center justify-content-center ">
-                        <div class="shop-item">
-                            <a href="product page">
-                                <img src="assets/images/stock.jpg" alt="Stock">
-                                <div>Title - stock photo description</div>
-                                <div>Subtitle - size</div>
-                                <div>Price</div>
-                            </a>
-                        </div>
-                        <div class="shop-item">
-                            <a href="product page">
-                                <img src="assets/images/stock.jpg" alt="Stock">
-                                <div>Title - stock photo description</div>
-                                <div>Subtitle - size</div>
-                                <div>Price</div>
-                            </a>
-                        </div>
-                        <div class="shop-item">
-                            <a href="product page">
-                                <img src="assets/images/stock.jpg" alt="Stock">
-                                <div>Title - stock photo description</div>
-                                <div>Subtitle - size</div>
-                                <div>Price</div>
-                            </a>
-                        </div>
-                        <div class="shop-item">
-                            <a href="product page">
-                                <img src="assets/images/stock.jpg" alt="Stock">
-                                <div>Title - stock photo description</div>
-                                <div>Subtitle - size</div>
-                                <div>Price</div>
-                            </a>
-                        </div>
+                </div>
+                <div class="shop-container mt-lg-4 row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 text-center justify-content-center ">
+                    <div class="shop-item">
+                        <a href="product page">
+                            <img src="assets/images/stock.jpg" alt="Stock">
+                            <div class="shop-item-title"><h5>Title - stock photo description</h5></div>
+                            <div class="shop-item-sub"><h6>Subtitle - size</h6></div>
+                            <div class="shop-item-price">£26.00</div>
+                        </a>
                     </div>
-                </section>
-            </div>
+                    <div class="shop-item">
+                        <a href="product page">
+                            <img src="assets/images/stock.jpg" alt="Stock">
+                            <div class="shop-item-title"><h5>Title - stock photo description</h5></div>
+                            <div class="shop-item-sub"><h6>Subtitle - size</h6></div>
+                            <div class="shop-item-price">Price</div>
+                        </a>
+                    </div>
+                    <div class="shop-item">
+                        <a href="product page">
+                            <img src="assets/images/stock.jpg" alt="Stock">
+                            <div class="shop-item-title"><h5>Title - stock photo description</h5></div>
+                            <div class="shop-item-sub"><h6>Subtitle - size</h6></div>
+                            <div class="shop-item-price">Price</div>
+                        </a>
+                    </div>
+                    <div class="shop-item">
+                        <a href="product page">
+                            <img src="assets/images/stock.jpg" alt="Stock">
+                            <div class="shop-item-title"><h5>Title - stock photo description</h5></div>
+                            <div class="shop-item-sub"><h6>Subtitle - size</h6></div>
+                            <div class="shop-item-price">Price</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
+    </div>
     <!--/Shop-->
+
+    <!-- Footer -->
+    <div class="container-fluid my-5 footer-container">
+        <footer class="footer">
+            <div class="row justify-content-center">
+                <div class="footer-image col-6 text-center justify-content-center">
+                    <img src="/assets/images/chris-profile-pic.jpg" alt="Chris Edwards">
+                    <p>Chris Edwards (left)</p>
+                </div>
+                <div class="container justify-content-center py-5 social-media col-6">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            
+                <!-- Copyright -->
+                <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+            </div>
+        </footer> 
+    </div>
 
     <!-- Modal-->
     <div class="modal" id="contact-modal" role="dialog" tabindex="-1">

@@ -1,14 +1,13 @@
 body {
-    font-family: 'Noto Sans', sans-serif;
-    /* font-family: 'Lora', serif; */
-    
-    
+    font-family: 'Noto Sans', sans-serif;    
 }
+
+
 
 /* containers */
 
 .content-container{
-    padding: 120px 0px;
+    padding: 10vh 0px;
 }
 
 .callout-container{
@@ -44,15 +43,11 @@ body {
     z-index: -1;
 }
 
-.shop-container{
 
-}
 
 
 /* navigation bar */
-
 .navalert-container{
-
 }
 
 .discount-banner{
@@ -60,17 +55,13 @@ body {
     background-color: #f3c643c7;
     border-radius: 0;
     padding: 7px;
-
 }
 
 .navbar {
     background-color: #585657;
     border-bottom: solid;
-    border-bottom-color: whitesmoke;
-    border-bottom-width: 1.5px;
-    border-top: solid;
-    border-top-color: whitesmoke;
-    border-top-width: 1.75px;
+    border-bottom-color: rgba(182, 182, 182, 0.496);
+    border-bottom-width: 1px;
 } 
 
 .navbar-brand{
@@ -108,15 +99,39 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 
 
-/* modal */
 
+/* shop */
+.shop-container .shop-item a{
+    color: black;
+    text-decoration: none;
+}
+.shop-container .shop-item-title{
+    color: black;
+    padding-top: 4px;
+}
+.shop-container .shop-item-price{
+    color: seagreen;
+    font-size: 19px;
+}
+.shop-item img{
+    transition: 0.3s all;
+}
+.shop-item:hover img{
+    opacity: 0.5;
+}
+
+
+
+
+
+/* modal */
 .modal{
     font-family: 'Lato', sans-serif;
 }
 
 
-/* headers */
 
+/* headers */
 .callout-header{
     color: white;
     background-color: black;
@@ -124,30 +139,64 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 
 .page-header h2{
-    /* text-transform: uppercase; */
-    text-align: center;
-    margin-bottom: 4rem;
     font-size: 40px;
-
 }
+
+.page-header{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+
+/* block dividers */
+.block-divider{
+    width: 200px;
+    height: 4px;
+    border-color: seagreen;
+    background-color: seagreen;
+    border-width: 1px;
+    border-style: solid;
+    margin:auto;
+}
+
 
 
 /* buttons */
-
-
-
-.callout .btn:hover {
-    font-weight: 500;
-    border-style: solid;
-    border-width: 3px;
-    color: seagreen;
-    background-color: white;
-    border-color: seagreen;
-}
-
 .callout .btn{
     background-color: seagreen;
     color: white;
     border-style: solid;
-    border-width: 3px;
+    border-width: 0px;
+}
+
+.callout .btn:hover {
+    border-style: solid;
+    border-width: 0px;
+    color: seagreen;
+    background-color: white;
+    border-color: white;
+}
+
+
+/* footer */
+.footer{
+    background-color: seagreen;
+    height: 40vh;
+}
+.footer .social-media{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 11px;
+}
+.footer-image{
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    color: white;
+    
+}
+.footer-image img{
+    border-radius: 50%;
+    width: 100%;
 }
