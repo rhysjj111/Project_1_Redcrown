@@ -9,7 +9,6 @@ body {
 .content-container{
     padding: 10vh 0px;
 }
-
 .callout-container{
     height: 90vh;
 
@@ -26,13 +25,11 @@ body {
 
     position: relative;
 }
-
 @media (max-width: 768px) {
    .callout-container{
     height: 80vh;
    }
 }
-
 .opaque-overlay{
     position: absolute;
     top: 0;
@@ -42,6 +39,9 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
+.footer-container{
+    padding:0;
+}
 
 
 
@@ -49,7 +49,6 @@ body {
 /* navigation bar */
 .navalert-container{
 }
-
 .discount-banner{
     border: 0;
     background-color: #f3c643c7;
@@ -63,7 +62,6 @@ body {
     border-bottom-color: rgba(182, 182, 182, 0.496);
     border-bottom-width: 1px;
 } 
-
 .navbar-brand{
     margin: 0;
 }
@@ -72,7 +70,7 @@ body {
     letter-spacing: 0.75px;
     color: white;
 }
-    
+
 .nav-item a:hover{
     color: seagreen;
 }
@@ -80,10 +78,6 @@ body {
 .navbar-nav .nav-item .active{
     background-color: none;
     text-decoration: underline;
-}
-
-#contact-button{
-    color: #585657;
 }
 
 /* navbar toggler */
@@ -163,13 +157,18 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 
 
 /* buttons */
+#contact-button{
+    color: #585657;
+}
+#contact-button:hover{
+    background-color: seagreen;
+}
 .callout .btn{
     background-color: seagreen;
     color: white;
     border-style: solid;
     border-width: 0px;
 }
-
 .callout .btn:hover {
     border-style: solid;
     border-width: 0px;
@@ -179,24 +178,50 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 
 
+
 /* footer */
 .footer{
     background-color: seagreen;
-    height: 40vh;
+    height: 30vh;
+    min-height: 250px;
+    max-height: 300px;
+    padding-top: 20px;
 }
-.footer .social-media{
+.footer .contact-thumbnail-container{
+    font-size: 20px;
+    color: white;
+    padding: 0;
+}
+.footer .contact-thumbnail-container a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer .contact-thumbnail-container a:hover{
+    opacity: 0.5;
+}
+.footer-thumbnail-icon i{
     font-size: 40px;
-    color: white;
-    letter-spacing: 11px;
 }
-.footer-image{
-    padding: 20px;
-    height: 200px;
-    width: 200px;
-    color: white;
-    
+.footer-image-container{
+    color: white; 
+    margin-left: 30px;
 }
-.footer-image img{
+.footer-image-container img{
     border-radius: 50%;
     width: 100%;
+    height: auto;
+    max-height: 175px;
+    margin-bottom: 5px;
+}
+.footer-image-container p{
+    margin: 0;
+}
+
+
+
+/* copyright */
+.copyright{
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 50px;
 }
