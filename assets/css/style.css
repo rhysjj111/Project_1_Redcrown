@@ -4,8 +4,6 @@ body {
 }
 
 
-
-
 /* navigation bar */
 .discount-banner{
     border: 0;
@@ -30,34 +28,23 @@ body {
 .navbar-brand{
     margin: 0;
 }
-
 .nav-item a{
     letter-spacing: 0.75px;
     color: white;
     font-weight: 300;
 }
-
 .nav-item a:hover{
     color: seagreen;
 }
-
 .navbar-nav .nav-item .active{
     background-color: none;
     font-weight: 600;
 }
-
 /* navbar toggler */
 body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     border: none;
     color: transparent;
 }
-
-.nav-item #contact-button:hover{
-    background-color: seagreen;
-    color: white;
-    border-color: seagreen;
-}
-
 
 
 
@@ -114,6 +101,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 
 
+
 /* modal */
 .modal{
     font-family: 'Lato', sans-serif;
@@ -124,9 +112,15 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 
 
 
+/* fonts */
+
+
+
 /* containers */
 .content-container{
-    padding: 15vh 0px;
+    padding: 8vh 0px;
+    background-color: #eeece476;    
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -155,27 +149,45 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 
 
 /* buttons */
-#contact-button{
-    color: #585657;
-    font-weight: 500;
+.btn{
+    font-weight: 300;
     border-radius: 3px;
     padding: 10px;
+    font-family: 'roboto slab', sans-serif;
+    background-color: seagreen;
+    color: white;
     transition: 0.3s;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
 }
-#contact-button:hover{
-    opacity: 0.5;
+.btn:hover{
+    opacity: 0.8;
+    color: white;
+    background-color: seagreen;
+}
+#contact-button{
+    color: #585657;
+    background-color: #fdfbfb;
+    font-weight: 400;
 }
 
 
+
+/* images */
+.product-image{
+    border-radius: 1%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 /* media queries */
 @media (max-width: 768px) {
     .callout-container{
      height: 80vh;
+    }
+    .callout-header h1{
+        font-size: 37px!important;
     }
 }
 
@@ -250,21 +262,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     border-right: 1px solid white;
 }
 .callout .btn{
-    background-color: seagreen;
-    color: white;
-    text-align: center;
-    font-family: 'roboto slab', sans-serif;
     font-size: 21px;
-    font-weight: 300;
-    transition: 0.3s;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-}
-.callout .btn:hover {
-    color: seagreen;
-    background-color: white;
-    border-color: white;
 }
 
 
@@ -276,7 +274,6 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 .shop-container .shop-item a{
     color: black;
     text-decoration: none;
-    font-family: lato, sans-serif;
 }
 .shop-container .shop-item-title{
     color: black;
@@ -289,8 +286,6 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 .shop-item img{
     transition: 0.3s all;
-    border-radius: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom:5px;
 }
 .shop-item:hover img{
@@ -300,10 +295,54 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 
 /* --------------------------------------------------------- product.html */
 
-.product-display{
-    max-height: 300px;
+.product-display-container{
+    min-height: 350px;
+}
+.product-display-img-container .product-image{
+    max-width: 100%;
+    height:auto;
+    outline: solid 4px rgba(4, 67, 2, 0.505);
+}
+.product-title{
+    margin-bottom: 4px;
+}
+.product-subtitle{
+    margin-bottom: 30px;
+    color: #585657;
+}
+.product-price{
+    margin: 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.product-btn{
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
-.main-product-image{
-    object-fit: cover;
+
+
+/* --------------------------------------------------------- gallery.html */
+
+
+.gallery .page-header{
+    margin-bottom: 10px;
+}
+.carousel-container{
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.901);
+    justify-content: center;
+}
+.carousel img{
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+.gallery-intro{
+    font-size: 19px;
+}
+.get-in-touch{
+    padding:12px;
+    margin-top: 11px;
 }
