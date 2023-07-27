@@ -104,7 +104,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 
 /* modal */
 .modal{
-    font-family: 'Lato', sans-serif;
+    font-family: 'lato', sans-serif;
 }
 
 
@@ -311,7 +311,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     color: #585657;
 }
 .product-price{
-    margin: 0;
+    margin: 8px;
     font-size: 26px;
     font-weight: 500;
 }
@@ -334,8 +334,8 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     justify-content: center;
 }
 .carousel img{
-    max-height: 100%;
     max-width: 100%;
+    max-height: 500px;
     height: auto;
     margin: auto;
 }
@@ -344,5 +344,48 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 .get-in-touch{
     padding:12px;
-    margin-top: 11px;
+    margin: 4px;
 }
+
+
+/* --------------------------------------------------------- about.html */
+
+.about-image{
+    max-width: 100%;
+    max-height: 450px;
+    width: auto;
+    height:auto;
+    outline: solid 4px rgba(4, 67, 2, 0.505);
+    border-radius: 2px; 
+}
+.contact-info-container{
+    max-width: 500px;
+}
+.about-info{
+    margin-bottom: 20px;
+}
+.contact-info{
+    display: block;
+    margin-bottom: 20px;
+    clear: both;
+}
+.key,
+.value{
+    padding-right: 8px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.key p,
+.value p {
+    margin: 0;
+}
+.key{
+    width: 25%;
+    margin-right: 10px
+}
+.value{
+    width: 60%;
+}
+
+
