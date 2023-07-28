@@ -10,20 +10,19 @@ body {
     background-color: rgba(232, 12, 71, 0.908);
     border-radius: 0;
     padding: 7px;
-    color: white;
     letter-spacing: 1px;
     word-spacing: 2px;
     font-weight: 400;
+}
+.discount-banner a{
+    color: white;
+    text-decoration: none;
 }
 .navbar {
     background-color: #585657;
     border-bottom: solid;
     border-bottom-color: rgba(182, 182, 182, 0.496);
     border-bottom-width: 1px;
-    /* position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 3; */
 } 
 .navbar-brand{
     margin: 0;
@@ -141,7 +140,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     width: 80px;
     background-color: seagreen;
     border: 0;
-    border-top: 4px solid seagreen;
+    border-top: 4px solid rgba(46, 139, 86, 0.878);
     margin: 20px auto;
     padding: 0;
 }
@@ -154,8 +153,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     border-radius: 3px;
     padding: 10px;
     font-family: 'roboto slab', sans-serif;
-    background-color: seagreen;
-    color: white;
+
     transition: 0.3s;
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -163,15 +161,30 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 .btn:hover{
     opacity: 0.8;
-    color: white;
-    background-color: seagreen;
 }
-#contact-button{
-    color: #585657;
+.btn-green{
+    background-color: seagreen;
+    color: white;
+}
+.btn-green:hover{
+    background-color: seagreen;
+    color: white;
+}
+
+.contact-button{
+    color: #585657!important;
     background-color: #fdfbfb;
     font-weight: 400;
 }
-
+.contact-button:hover{
+    color: #585657!important;
+    background-color: #fdfbfb;
+    opacity: 0.8;
+}
+.get-in-touch{
+    padding:12px;
+    margin: 8px 30px ;
+}
 
 
 /* images */
@@ -186,7 +199,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     .callout-container{
      height: 80vh;
     }
-    .callout-header h1{
+    .callout-header h2{
         font-size: 37px!important;
     }
 }
@@ -233,7 +246,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     color: white;
     background-color: black;
 }
-.callout-header h1{
+.callout-header h2{
     font-size: 44px
 }
 .callout-link-container{
@@ -342,10 +355,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 .gallery-intro{
     font-size: 19px;
 }
-.get-in-touch{
-    padding:12px;
-    margin: 4px;
-}
+
 
 
 /* --------------------------------------------------------- about.html */

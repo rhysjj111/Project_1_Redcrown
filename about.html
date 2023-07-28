@@ -22,8 +22,8 @@
         <div class="discount-banner-container container-fluid">
             <div class="row d-none d-sm-block">
                 <div class="col-12 p-0">
-                    <div class="discount-banner alert m-0 text-center my-auto"><strong>Sale Now On!</strong>
-                        Enter code: '<span class="text-warning"><strong>DISCOUNT15</strong></span>' at checkout.
+                    <div class="discount-banner alert m-0 text-center my-auto"><a href="/index.html#shop"><strong>Brand new products available!</strong>
+                        Checkout the '<span class="text-warning"><strong>SHOP</strong></span>' now!</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                     <div class="ms-lg-auto me-lg-5">
                         <ul class="navbar-nav">
                             <li class="d-none d-lg-block">
-                                <a class="btn btn-light" data-bs-toggle="modal" data-bs-target="#contact-modal" id="contact-button" >Contact us <i class="fa-solid fa-comment" aria-hidden="true"></i></a>
+                                <a class="btn btn-light contact-button" data-bs-toggle="modal" data-bs-target="#contact-modal" >Contact us <i class="fa-solid fa-comment" aria-hidden="true"></i></a>
                             </li> 
                             
                         </ul>
@@ -75,7 +75,7 @@
             <section class="container about-container">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 text-center d-flex align-items-start justify-content-center justify-content-lg-end mb-4">
-                        <img class="about-image p-3 img-fluid" src="/assets/images/About/chris_aboutme.jpg" alt="A photo of Chris Edwards, founder of Red Crown.">
+                        <img class="about-image p-3 img-fluid" src="assets/images/About/chris_aboutme.jpg" alt="A photo of Chris Edwards, founder of Red Crown.">
                     </div>
                 
                     <div class="col-lg-8 text-center text-lg-start px-lg-3">
@@ -86,7 +86,7 @@
                         <div class="row">
                             <div class="col-12 about-info">
                                 <h4>Services</h4>
-                                <ul>
+                                <ul class=" text-start">
                                     <li>
                                         <p>We sell busts of various sizes, designed and produced in-house. Each figure is based on a real person and 
                                         comes with a rich history.</p>
@@ -98,9 +98,10 @@
                                     <li>
                                         <p>If you'd like a bust professionally hand painted, then get in touch to discuss options. The bust can be 
                                         provided by ourselves or externally sourced.</p>
-                                    <a class="btn get-in-touch" data-bs-toggle="modal" data-bs-target="#contact-modal">Get in touch!</a>
+                                    
                                     </li>
                                 </ul>
+                                <a class="btn get-in-touch btn-green" data-bs-toggle="modal" data-bs-target="#contact-modal">Get in touch!</a>
                             </div>
                         </div>  
                         <div class="row">
@@ -158,7 +159,7 @@
                 <div class="row h-100 w-100 m-0">
                     <div class="footer-image-container d-none d-sm-flex col-sm-3 justify-content-end align-items-center ms-5 ms-lg-0">
                         <div class="text-center">
-                            <img src="/assets/images/chris-profile-pic.jpg" alt="Chris Edwards">  
+                            <img src="assets/images/chris-profile-pic.jpg" alt="Chris Edwards">  
                             
                         </div>
                     </div>
@@ -169,7 +170,7 @@
                         <div class="col-6 col-lg-3 footer-thumbnail-icon"><a target="blank" href="https://www.facebook.com/RedCrownFigures"><i class="fa-brands fa-facebook" aria-hidden="true"></i><p>Facebook</p></a></div>
                         <div class="d-none d-lg-block col-3 footer-thumbnail-icon px-2"><i class="fa-solid fa-phone" aria-hidden="true"></i><p>07888 888888</p></div>
                         <div class="d-none d-lg-block col-4 footer-thumbnail-icon"><i class="fa-regular fa-envelope" aria-hidden="true"></i><p>chris@redcrown.com</p></div>
-                        <div class="d-block d-lg-none col-6"><a class="btn btn-light" data-bs-toggle="modal" data-bs-target="#contact-modal" id="contact-button" >Contact us <i class="fa-solid fa-comment" aria-hidden="true"></i></a></div>
+                        <div class="d-block d-lg-none col-6"><a class="btn contact-button" data-bs-toggle="modal" data-bs-target="#contact-modal" >Contact us <i class="fa-solid fa-comment" aria-hidden="true"></i></a></div>
                     </div>
                 
                     <!-- Copyright -->
@@ -192,7 +193,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="contact-form" role="form">           
+                        <form id="contact-form">           
                             <div class="form-group mb-3">
                                 <label for="form_name" class="form-label" >Name*</label>
                                 <input id="form_name" type="text" name="name" class="form-control form-control-lg" placeholder="Please enter your name" required="required" data-error="Firstname is required.">
@@ -209,6 +210,7 @@
                                 <input type="submit" class="btn btn-lg btn-success btn-send  pt-2 btn-block" value="Send Message" >
                             </div>                      
                         </form>
+                    </div>
                 </div>
             </div>
         </div>
