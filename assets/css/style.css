@@ -15,8 +15,8 @@ body {
     font-weight: 400;
 }
 .discount-banner a{
-    color: white;
-    text-decoration: none;
+    color: white!important;
+    text-decoration: none!important;
 }
 .navbar {
     background-color: #585657;
