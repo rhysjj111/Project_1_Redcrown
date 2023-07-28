@@ -1,6 +1,6 @@
-# Name of project: A website for a friends side business.
+# A website for a friends side business.
 
-# UX
+## UX
 
 ### Overview
 Redcrown figures is a side business that professionally paint figures for it's customers. They are about to go into designing and producing figures themselves and want a professional website to showcase their new products. This site is targeted towards showcasing these new products primarily, and showcasing the commission paints already completed for both new and old customers.
@@ -54,7 +54,7 @@ I will try to include all of these features, as I do not think they are too tech
 ![Product page - tablet wireframe](/assets/images/Wireframes/Product-tab.png)
 ![Product page - mobile wireframe](/assets/images/Wireframes/Product-mb.png)
 
-- Wireframe / End design likeness
+- End design similarity/difference
   - The wireframes were largely the same as the finished product, the main differences were some sizing of elements and a bootstrap carousel was used instead of a tile configuration for the photos in the commission gallery page.
   - I had made these changes because it just looked better visualy in practice.
 
@@ -70,7 +70,7 @@ I will try to include all of these features, as I do not think they are too tech
 - Spacing/sizing
   - Generally, the main difficulty I came across was getting everything in position whilst remaining responsive. I put this down to getting to know CSS and how bootstrap works rather than a bug that could be fixed.
 
-#### Testing
+#### Features
 
 - Links
   - All links were tested including navbar links, callout buttons and product links. Links that take you to a different page were made sure to open in a new tab.
@@ -78,39 +78,33 @@ I will try to include all of these features, as I do not think they are too tech
 - Forms
   - There is a register interest form and a general interest form. Both forms' fields work correctly if optional or manditory. Forms are not linked to a database so functionality can not be tested in that regard.
 
+
 ### Validators
 
 - No errors show when each html page is put into W3C validator
-- 9 warnings showed up on the W3C CSS checker about vendor extensions:
+- 9 warnings showed up on the W3C CSS checker about vendor extensions:  
 ![CSS validator warnings](/assets/images/Readme/CSS_validator.png)
 
+### Future features to include/update
+
+- I would like to make the readme file more comprehensive.
+- Forms should be linked up and should include feedback for the user.
 
 
 
+### Deployment
+- The site was deployed to GitHub pages:
+  - Repository page > Setting > Pages > Build and deployment > Main branch > Save.
+  - Refresh page > Visit site.
+    
+Link to live site - https://rhysjj111.github.io/Project_1_Redcrown/
 
+Cloning the Repository:
+  - Repository page > Code > local > HTTPS > copy link > clone in code editor.
 
+### Credits
+https://bbbootstrap.com/snippets/simple-contact-form-74408136 - used as a template for main contact form.  
+https://mdbootstrap.com/how-to/bootstrap/footer-add/ - used a template for structure of footer.  
+https://www.w3schools.com/css/css3_shadows_box.asp - used code for box shadows on images.  
+Images taken from Redcrown facebook page. (Permission granted)  
 
-
-
-
-### 
-
-
-
-
-
-
-
-
-deployment :  https://rhysjj111.github.io/Project_1_Redcrown/
-
-# Sources
-
-https://bbbootstrap.com/snippets/simple-contact-form-74408136 - used as a template for my main contact form.
-https://mdbootstrap.com/how-to/bootstrap/footer-add/ - used a template for a footer.
-https://www.w3schools.com/css/css3_shadows_box.asp - used code for box shadows on images.
-
-# Index
----
-1. UX
-  * Project goals

@@ -4,6 +4,7 @@ body {
 }
 
 
+
 /* navigation bar */
 .discount-banner{
     border: 0;
@@ -47,6 +48,7 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 
 
 
+
 /* footer */
 .footer-container{
     padding:0;
@@ -67,9 +69,9 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     color: white;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-    /* -moz-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out; */
+    -o-transition: 0.3s ease-in-out;
 }
 .footer .contact-thumbnail-container a:hover{
     opacity: 0.5;
@@ -107,11 +109,8 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 
 
+
 /* --------------------------------------------------------- general */
-
-
-
-/* fonts */
 
 
 
@@ -155,9 +154,9 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
     font-family: 'roboto slab', sans-serif;
 
     transition: 0.3s;
-    /* -moz-transition: 0.3s;
+    -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
-    -o-transition: 0.3s; */
+    -o-transition: 0.3s;
 }
 .btn:hover{
     opacity: 0.8;
@@ -187,11 +186,13 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 
 
+
 /* images */
 .product-image{
     border-radius: 1%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 
 /* media queries */
@@ -306,7 +307,10 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 }
 
 
+
 /* --------------------------------------------------------- product.html */
+
+
 
 .product-display-container{
     min-height: 350px;
@@ -360,6 +364,8 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 
 /* --------------------------------------------------------- about.html */
 
+
+
 .about-image{
     max-width: 100%;
     max-height: 450px;
@@ -397,5 +403,3 @@ body > div.container-fluid.navalert-container.p-0.m-0 > nav > div > button{
 .value{
     width: 60%;
 }
-
-
